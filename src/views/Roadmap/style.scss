@@ -1,0 +1,111 @@
+.map-content-items-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.map-content-bg-image{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100%;
+}
+.roadmap-page{
+  position: relative;
+}
+.map-content-item{
+  max-width: 350px;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+}
+.map-content-item-title{
+  text-shadow: 0px 0px 25px #C676D7;
+  font-size: 14px;
+  line-height: 21px;
+}
+.map-content-item:nth-child(odd) {
+  text-align: right;
+  position: relative;
+  margin-right: 45%;
+  .map-content-item-title{
+    color: #5DFF9D;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    border-top: 26px solid #A7FFCA;
+    left: 108%;
+    top: 15%;
+    transform: rotate(90deg);
+  }
+}
+.map-content-item:nth-child(even) {
+  margin-left: 45%;
+  position: relative;
+  .map-content-item-title{
+    color: #14BAFF;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    border-top: 26px solid #59CEFF;
+    right: 113%;
+    top: 15%;
+    transform: rotate(-90deg);
+  }
+}
+.map-content-item-paragraph{
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  .map-content-bg-image{
+    left: -40px;
+    transform: translateX(0);
+  }
+  .map-content-item{
+    padding-left: 30px;
+  }
+  .map-content-item:nth-child(odd){
+    margin-right: 0;
+    text-align: left;
+  }
+  .map-content-item:nth-child(even){
+    margin-left: 0;
+  }
+  .map-content-item:nth-child(odd)::after {
+    left: -2%;
+    top: 15%;
+    transform: rotate(-90deg);
+  }
+  .map-content-item:nth-child(even)::after {
+    right: auto;
+    top: 15%;
+    left: -2%;
+    transform: rotate(-90deg);
+  }
+  .map-content-items-wrapper{
+    margin-top: -50px;
+  }
+}
+@media (max-width: 375px) {
+  .map-content-item:nth-child(odd)::after{
+    left: 2%;
+  }
+  .map-content-item:nth-child(even)::after{
+    left: 2%;
+  }
+}
+@media (max-width: 360px) {
+  .map-content-item:nth-child(odd)::after{
+    left: 5%;
+  }
+  .map-content-item:nth-child(even)::after{
+    left: 5%;
+  }
+}

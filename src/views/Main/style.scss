@@ -1,0 +1,38 @@
+.big-logo-wrapper{
+  text-align: center;
+  padding-bottom: 37px;
+  padding-top: 134px;
+}
+.orao-banner{
+  background-image: url('../../assets/main-page/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.orao-banner-title{
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 25px #C676D7;
+  font-weight: 400;
+  max-width: 550px;
+  margin: 0 auto 35px;
+}
+.orao-banner-buttons-row a {
+  margin-right: 30px;
+}
+.orao-banner-buttons-row {
+  padding-bottom: 150px;
+}
+@media (max-width: 767px) {
+  .orao-banner-title{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .big-logo-wrapper{
+    padding-top: 34px;
+  }
+}

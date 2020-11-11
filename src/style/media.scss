@@ -1,0 +1,213 @@
+@media (max-width: 1200px) {
+  .section-content-image{
+    max-width: 100%;
+  }
+  .header{
+    position: relative;
+  }
+}
+@media (max-width: 991px) {
+  .hidden-md{
+    display: none;
+  }
+  .m-title{
+    display: block;
+  }
+  .bg-black-section {
+    padding: 60px 0;
+  }
+  .section-content-image{
+    margin-bottom: 50px;
+  }
+  .md-center-content{
+    display: flex;
+    justify-content: center;
+  }
+  .faq-title{
+    margin-bottom: 50px;
+  }
+  .flex-md-column-reverse{
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .list-navigation{
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 0;
+    z-index: 9;
+    background: rgba(47, 20, 74, 1);
+    transform: translateX(-100%);
+    transition: 0.3s linear all;
+    padding-top: 30px;
+  }
+  .list-navigation.active{
+    transform: translateX(0);
+  }
+  .list-navigation-list {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .list-navigation-item{
+    padding: 10px 30px;
+  }
+  .list-navigation-item:first-child {
+    padding-left: 30px;
+  }
+  .list-navigation-item:last-child {
+    padding-right: 30px;
+  }
+  .list-navigation-item{
+    margin-bottom: 15px;
+  }
+  .m-logotype {
+    display: block;
+  }
+
+  .m-header-burger {
+    span{
+      display: block;
+      background: rgba(255, 255, 255, 0.95);
+      margin-bottom: 8px;
+      width: 37px;
+      height: 3px;
+      transition: 0.3s linear all;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    &.active {
+      span{
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 13px);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3){
+          transform: rotate(-45deg) translate(2px, -11px);
+        }
+      }
+    }
+  }
+  .header {
+    & > .container {
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .list-navigation-inner{
+    background: rgba(255, 255, 255, 1);
+  }
+  .orao-banner-buttons-row{
+    flex-wrap: wrap;
+    .default-button{
+      margin-bottom: 20px;
+    }
+  }
+  .callback-form-first-row{
+    flex-wrap: wrap;
+  }
+  .callback-form-first-row {
+    margin-bottom: 0px;
+  }
+  .form-control-label{
+    margin-bottom: 20px;
+  }
+  .copyright-wrapper{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start !important;
+    padding-bottom: 1rem;
+    p{
+      margin-bottom: 0;
+    }
+  }
+  .safety{
+    .section-content-image{
+      position: absolute;
+      left: -90px;
+      width: calc(100% + 90px);
+      max-width: initial;
+    }
+    .section-content-img-wrap{
+      height: 330px;
+      overflow: hidden;
+    }
+  }
+  .footer-text{
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+  .footer-title{
+    text-align: center;
+  }
+  .default-button{
+    font-size: 15px;
+  }
+  .buttons-column-button{
+    width: 310px;
+  }
+  .list-navigation-inner {
+    background: transparent;
+    position: static;
+    opacity: 1;
+    transform: none;
+    width: auto;
+  }
+  .list-navigation-inner-list{
+    padding: 0;
+    text-align: left;
+  }
+  .list-navigation-item-link, .list-navigation-inner-list-link{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .list-navigation-item{
+    text-align: left;
+  }
+  .list-navigation-item-hover{
+    display: none;
+  }
+  .list-navigation-inner-list-item{
+    padding: 0px 10px;
+    margin-top: 5px;
+  }
+  .list-navigation-inner{
+    margin-top: 5px;
+  }
+
+}
+@media (max-width: 375px) {
+  .map-content-item {
+    padding-left: 50px;
+  }
+  .map-content-item:nth-child(odd)::after{
+    left: 2%;
+  }
+  .map-content-item:nth-child(even)::after{
+    left: 2%;
+  }
+}
+@media (max-width: 360px) {
+  .default-button{
+    font-size: 15px;
+    padding: 0 8px;
+  }
+  .map-content-item:nth-child(odd)::after{
+    left: 5%;
+  }
+  .map-content-item:nth-child(even)::after{
+    left: 5%;
+  }
+}
