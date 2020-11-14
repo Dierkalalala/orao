@@ -1,0 +1,32 @@
+.team-participant-name, .team-participant-title{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-shadow: 0px 0px 25px #C676D7;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.team-participant-image-wrapper{
+  margin-right: 25px;
+}
+.team-participant-title{
+  color: #C676D7;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.team-participant-text{
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 25px #C676D7;
+  max-width: 230px;
+}
+@media (max-width: 767px) {
+  .team-participant-wrapper{
+    margin-bottom: 30px;
+  }
+}

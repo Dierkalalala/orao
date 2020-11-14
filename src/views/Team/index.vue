@@ -1,30 +1,58 @@
 <template>
-    <div id="roadmap" class="roadmap-page">
-        <mainTitle title="roadmap">
-            <div class="map-content">
-                <img src="../../assets/map/map.png" class="map-content-bg-image" alt="">
-                <ul class="map-content-items-wrapper">
-                    <li class="map-content-item" :key="item.id" v-for="item in roadmapItems">
-                        <div class="map-content-item-title">
-                            {{item.title}}
-                        </div>
-                        <div class="map-content-item-paragraph">
-                            {{item.text}}
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    <div id="team" class="team-page">
+        <mainTitle title="team">
         </mainTitle>
+        <div class="team-black-colored-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <participant src="/img/2.9dc70f13.png" title="founder" name="Nikola Strahija"
+                                     text="Built an Alexa World Top 10, provided data to Google Search division,
+                                          tackled tens of Billions of trades in the crypto markets."
+                        ></participant>
+                    </div>
+                    <div class="col-lg-6">
+                        <participant src="/img/1.694c8dbe.png" title="founder" name="Nikola Strahija"
+                                     text="Built an Alexa World Top 10, provided data to Google Search division,
+                                          tackled tens of Billions of trades in the crypto markets."
+                        ></participant>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section-default-background-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <participant src="/img/2.9dc70f13.png" title="founder" name="Nikola Strahija"
+                                     text="Built an Alexa World Top 10, provided data to Google Search division,
+                                          tackled tens of Billions of trades in the crypto markets."
+                        ></participant>
+                    </div>
+                    <div class="col-lg-6">
+                        <participant src="/img/1.694c8dbe.png" title="founder" name="Nikola Strahija"
+                                     text="Built an Alexa World Top 10, provided data to Google Search division,
+                                          tackled tens of Billions of trades in the crypto markets."
+                        ></participant>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </template>
 
 <script>
     import mainTitle from '@/components/main-title'
+    import participant from '@/components/participant'
+
     export default {
         name: "index",
         components: {
-            mainTitle
+            mainTitle,
+            participant
         },
         data() {
             return {
@@ -86,5 +114,4 @@
 </script>
 
 <style scoped lang="scss">
-    @import "style.scss";
 </style>

@@ -24,7 +24,17 @@ const routes = [
     path: '/roadmap',
     name: 'Roadmap',
     component: () => import('../views/Roadmap')
-  }
+  },
+  {
+    path: '/team',
+    name: 'Team',
+    component: () => import('../views/Team')
+  },
+  {
+    path: '/faq',
+    name: 'Faq',
+    component: () => import('../views/Faq')
+  },
 ]
 
 const router = new VueRouter({
